@@ -1,6 +1,6 @@
 # mpx-eslint-rules
 
-> mpx的rules测试库
+> mpx的eslint的rules库，仅仅是设计测试rules
 
 ## Dev
 
