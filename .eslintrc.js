@@ -1,18 +1,10 @@
 const { userConf } = require('./config/index')
 
 const eslintConf = {
-  root: true,
-  parser: 'babel-eslint',
   parserOptions: {
-    sourceType: 'module'
+    parser: 'babel-eslint'
   },
-  extends: 'standard',
-  settings: {
-    'html/html-extensions': ['.html', '.mpx'],  // consider .html and .mpx files as HTML
-  },
-  plugins: [
-    'html'
-  ],
+  extends: ['plugin:mpx/mpx-essential'],
   globals: {
     wx: 'readonly',
     getApp: 'readonly',

@@ -1,5 +1,5 @@
 <template>
-  <list></list>
+  <wx:for></wx:for>
 </template>
 
 <script lang="ts" src="./index.ts"></script>
@@ -7,7 +7,7 @@
 <script type="application/json">
   {
     "usingComponents": {
-      "list": "../components/list"
+      "wx:for": "../components/wx-for"
     }
   }
 </script>

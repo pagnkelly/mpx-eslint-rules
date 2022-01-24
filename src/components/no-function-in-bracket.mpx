@@ -1,0 +1,20 @@
+<template>
+  <!-- good -->
+  <view>{{ computedItem }}</view>
+  <!-- bad -->
+  <view>{{ f(item) }}</view>
+</template>
+
+<script>
+
+</script>
+
+<style lang="stylus">
+
+</style>
+
+<script type="application/json">
+  {
+    "usingComponents": {}
+  }
+</script>

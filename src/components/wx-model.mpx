@@ -1,0 +1,20 @@
+<template>
+  <!-- good -->
+  <input type="text" wx:for="{{arr}}" wx:model="{{arr[index]}}"/>
+  <!-- bad -->
+  <input type="text" wx:for="{{arr}}" wx:model="{{item}}"/>
+</template>
+
+<script>
+
+</script>
+
+<style lang="stylus">
+
+</style>
+
+<script type="application/json">
+  {
+    "usingComponents": {}
+  }
+</script>
