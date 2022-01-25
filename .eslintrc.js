@@ -2,7 +2,7 @@ const { userConf } = require('./config/index')
 
 const eslintConf = {
   parserOptions: {
-    parser: 'babel-eslint'
+    parser: '@typescript-eslint/parser'
   },
   extends: ['plugin:mpx/mpx-essential'],
   globals: {
