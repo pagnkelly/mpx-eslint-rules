@@ -1,5 +1,6 @@
 <template>
   <wx:for></wx:for>
+  <endtags />
 </template>
 
 <script lang="ts" src="./index.ts"></script>
@@ -7,7 +8,8 @@
 <script type="application/json">
   {
     "usingComponents": {
-      "wx:for": "../components/wx-for"
+      "wx:for": "../components/wx-for",
+      "endtags": "../components/html-end-tags.mpx"
     }
   }
 </script>
