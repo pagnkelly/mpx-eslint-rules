@@ -9,13 +9,25 @@
   </view>
 </template>
 
-<script>
+<script lang="ts">
   import { createComponent } from '@mpxjs/core'
 
   createComponent({
     data: {
       a: 1,
       b: 2
+    },
+    methods: {
+      aa (c: any) {
+         const data = {
+            orderCreateImg: 'd'
+          } as {
+            orderCreateImg: string;
+            tipsText: string;
+          }
+
+        console.log(data?.orderCreateImg)
+      }
     }
   })
 </script>
