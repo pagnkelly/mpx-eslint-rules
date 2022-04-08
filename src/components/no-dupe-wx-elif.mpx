@@ -1,20 +1,33 @@
 <template>
+  <view wx:if="{{a || b}}" />
+  <view wx:elif="{{a}}" />
+ 
+  <view wx:if="{{a}}" />
+  <view wx:elif="{{b}}" />
+  <view wx:elif="{{a || b}}" />
+ 
+  <view wx:if="{{a}}" />
+  <view wx:elif="{{a && b}}" />
+
+  <view wx:if="{{a && b}}" />
+  <view wx:elif="{{a && b && c}}" />
+
+  <view wx:if="{{a || b}}" />
+  <view wx:elif="{{b && c}}" />
+  
+  <view wx:if="{{a}}" />
+  <view wx:elif="{{b && c}}" /> 
+  <view wx:elif="{{d && (c && e && b || a)}}" />
+
+  <view wx:if="{{b || a }}" />
+  <view wx:elif="a" />
+  <view wx:elif="{{a}}" />
+
+
   <view wx:if="{{a}}" />
   <view wx:elif="{{b}}" />
   <view wx:elif="{{c && d}}" />
   <view wx:elif="{{c && d}}" />
-
-  <view wx:if="{{n === 1}}" />
-  <view wx:elif="{{n === 2}}" />
-  <view wx:elif="{{n === 3}}" />
-  <view wx:elif="{{n === 2}}" />
-  <view wx:elif="{{n === 5}}" />
-
-  <view wx:if="n === 1" />
-  <view wx:elif="n === 1" />
-  <view>
-    {{ dwdwdw }}
-  </view>
 </template>
 
 <script>

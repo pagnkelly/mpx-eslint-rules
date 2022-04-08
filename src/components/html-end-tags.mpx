@@ -1,12 +1,19 @@
 <template>
-  <view src="11">
+ <view></view>
 </template>
 
 <script>
   import { createComponent } from '@mpxjs/core'
 
   createComponent({
-
+    properties: {
+      ddd: {
+        type: Number
+      }
+    },
+    attached() {
+      console.log(this.ddd, this.triggerEvent('ddd'))
+    }
   })
 </script>
 

@@ -1,6 +1,6 @@
 <template>
-  <wx:for></wx:for>
-  <endtags />
+  <wx:for ></wx:for>
+  <endtags bind:ddd="ddd" ddd="1"/>
 </template>
 
 <script lang="ts" src="./index.ts"></script>
