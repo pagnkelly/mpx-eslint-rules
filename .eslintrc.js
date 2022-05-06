@@ -4,7 +4,7 @@ const eslintConf = {
   parserOptions: {
     parser: '@typescript-eslint/parser'
   },
-  extends: ['plugin:mpx/mpx-essential'],
+  extends: ['plugin:mpx/mpx-essential', 'eslint:recommended'],
   globals: {
     wx: 'readonly',
     getApp: 'readonly',
