@@ -6,7 +6,18 @@
 </template>
 
 <script>
+  import { createComponent } from '@mpxjs/core'
 
+  createComponent({
+    properties: {
+      ppp: {
+        type: Number
+      }
+    },
+    attached() {
+      console.log(this.ppp, 'pppppp')
+    },
+  })
 </script>
 
 <style lang="stylus">

@@ -1,8 +1,8 @@
 <template>
   <!-- good -->
-  <view>{{ computedItem }}</view>
-  <!-- bad -->
-  <view>{{ f(item) }}</view>
+  <view wx:if="{{ddd}}">{{ computedItem }}</view>
+  <!-- bad
+  <view>{{ f(item) }}</view> -->
 </template>
 
 <script>
