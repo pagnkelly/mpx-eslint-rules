@@ -13,6 +13,7 @@
 <script lang="ts">
   import { createComponent } from '@mpxjs/core'
 
+  const a: Obj = {}
   createComponent({
     data: {
       a: 1,

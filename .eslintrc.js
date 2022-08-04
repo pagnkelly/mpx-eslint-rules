@@ -2,7 +2,16 @@ const { userConf } = require('./config/index')
 
 const eslintConf = {
   parserOptions: {
-    parser: '@typescript-eslint/parser'
+    parser: '@typescript-eslint/parser',
+    ecmaVersion: 2022,
+    ecmaFeatures: {
+      jsx: true,
+    },
+    sourceType: 'module',
+  },
+  env: {
+    node: true,
+    browser: true
   },
   extends: ['plugin:mpx/mpx-essential', 'eslint:recommended'],
   globals: {
@@ -29,6 +38,16 @@ if (userConf.tsSupport) {
       ],
       plugins: ['@typescript-eslint'],
     },
+    {
+      files: ['*.mpx'],
+      parser: 'mpx-eslint-parser',
+      parserOptions: {
+        parser: '@typescript-eslint/parser'
+      },
+      rules: {
+        'no-undef': 'off',
+      }
+    }
   ]
 }
 
