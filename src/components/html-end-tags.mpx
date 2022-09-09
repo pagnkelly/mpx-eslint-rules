@@ -15,6 +15,7 @@
       console.log(this.ddd, this.triggerEvent('ddd'))
     }
   })
+
 </script>
 
 <style lang="stylus">
