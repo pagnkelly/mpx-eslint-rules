@@ -2,25 +2,25 @@
 </template>
 
 <script>
-  import { createComponent } from '@mpxjs/core'
-  const sss = 11
-  createComponent({
-    properties: {
-      foo: String
-    },
-    computed: {
-      foo: {
-        get () { return '' }
-      }
-    },
-    data: {
-      foo: null
-    },
-    methods: {
-      foo () {
-      }
-    }
-  })
+	import { createComponent } from '@mpxjs/core'
+	const sss = 11
+	createComponent({
+		properties: {
+			foo: String
+		},
+		computed: {
+			foo: {
+				get () { return '' }
+			}
+		},
+		data: {
+			foo: null
+		},
+		methods: {
+			foo () {
+			}
+		}
+	})
 </script>
 
 <style lang="stylus">

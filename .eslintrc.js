@@ -5,7 +5,7 @@
 //   }
 // }
 const eslintConf = {
-  extends: ['eslint:recommended', 'plugin:mpx/composition-api-essential'],
+  extends: ['eslint:recommended', 'plugin:mpx/mpx-essential'],
   env: {
     node: true,
     jest: true
@@ -26,7 +26,13 @@ const eslintConf = {
     // camelcase: ['error', { 'allow': ['__mpx_mode__', '__mpx_env__'] }],
     camelcase: 0,
     'mpx/no-reserved-keys': 0,
-    'no-undef': 0
+    'no-undef': 2,
+    'mpx/script-setup-uses-vars': 0,
+    'mpx/script-indent': ["error", 'tab', {
+      "baseIndent": 1,
+      "switchCase": 0,
+      "ignores": []
+    }]
   },
 }
 
